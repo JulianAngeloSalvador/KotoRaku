@@ -31,6 +31,7 @@ const config: Config = {
       fast: ".3s",
       medium: ".5s",
       slow: ".75s",
+      turtle: "1s",
     },
     extend: {
       backgroundImage: {
@@ -49,6 +50,20 @@ const config: Config = {
       width: {
         "fluid-120": "min(120px, 100%)",
         "fluid-1200": "min(1200px, 100%)",
+      },
+      keyframes: {
+        scaled: {
+          "100%": { scale: "1", opacity: "1" },
+        },
+        visible: {
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "to-scaled":
+          "scaled theme(transitionDuration.fast) ease-in-out forwards",
+        "on-sight":
+          "visible theme(transitionDuration.fast) ease-in-out forwards",
       },
     },
   },
