@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-main-fs font-urbanist selection:bg-secondary selection:text-primary;
+    @apply text-main-fs font-urbanist bg-primary text-secondary  selection:bg-secondary selection:text-primary;
   }
 
   h1 {
