@@ -37,8 +37,7 @@ export default function AnimatedText({
             initial="hidden"
             animate={!inView ? "hidden" : "visible"}
             transition={{
-              type: "keyframes",
-              ease: "easeOut",
+              ease: "easeInOut",
               duration: duration,
               delay: delay,
             }}
@@ -91,8 +90,7 @@ export default function AnimatedText({
               initial="hidden"
               animate={!inView ? "hidden" : "visible"}
               transition={{
-                type: "keyframes",
-                ease: "easeOut",
+                ease: "easeInOut",
                 duration: duration,
                 delay: staggerValue * index,
               }}

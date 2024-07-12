@@ -30,7 +30,6 @@ export default function Home() {
           duration={0.75}
           text={primaryContent.headline!}
           motionVariant={fromBottom}
-          hoverable
         />
 
         <div className="mt-24 relative w-fluid-120 min-h-10 isolate">
@@ -50,13 +49,12 @@ export default function Home() {
           <header className="flex flex-wrap gap-x-4">
             {secondaryContent.headline.split(" ").map((word) => (
               <AnimatedText
-                className="leading-[1.25] text-special-subheadline overflow-hidden"
+                className="leading-[1.15] text-special-subheadline overflow-hidden"
                 element="h1"
                 text={word}
                 once
                 motionVariant={fromBottom}
                 duration={1}
-                hoverable
               />
             ))}
           </header>
