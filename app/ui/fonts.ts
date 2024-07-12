@@ -1,15 +1,19 @@
-import { Russo_One, Poppins } from "next/font/google";
+import { Russo_One, Urbanist } from "next/font/google";
 
 export const russo = Russo_One({
   weight: ["400"],
   subsets: ["latin"],
-  preload: true,
   display: "swap",
+  variable: "--font-russo",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
-export const poppins = Poppins({
+export const urbanist = Urbanist({
   weight: ["100", "300", "500", "700", "900"],
   subsets: ["latin"],
-  preload: true,
+  variable: "--font-urbanist",
   display: "swap",
+  fallback: ["system-ui", "arial"],
+  preload: true,
 });
